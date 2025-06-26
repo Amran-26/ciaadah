@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <title>Xisaabta Cibaadada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Xisaabta Cibaadadaada</h1>
+
+  <h2>Qeybta Salaadda</h2>
+  <label><input type="checkbox" id="salaadSubax"> Salaadda Subax</label><br>
+  <label><input type="checkbox" id="salaadDuhur"> Salaadda Duhur</label><br>
+  <label><input type="checkbox" id="salaadCasar"> Salaadda Casar</label><br>
+  <label><input type="checkbox" id="salaadMaqrib"> Salaadda Maqrib</label><br>
+  <label><input type="checkbox" id="salaadCishaa"> Salaadda Cishaa</label><br>
+
+  <h2>Adkaarta</h2>
+  <label><input type="checkbox" id="adkaarSubax"> Adkaarta Subax</label><br>
+  <label><input type="checkbox" id="adkaarHabeen"> Adkaarta Habeenkii</label><br>
+
+  <h2>Akhrinta Qur’aanka</h2>
+  <input type="number" id="quraanBogag" placeholder="Bogag Qur'aan ah oo aad akhriday">
+
+  <h2>Adkaarta Kale</h2>
+  <textarea id="adkaarKale" rows="3" placeholder="Tusaale: Subxaanallaah 100x, Aayatul Kursi 3x..."></textarea>
+
+  <h2>Saliga Nabiga ﷺ</h2>
+  <input type="text" id="saliga" placeholder="Tusaale: 100x, ama Salawaat cad">
+
+  <br><br>
+  <button onclick="saveCibaado()">Kaydi</button>
+  <p id="msg"></p>
+
+  <h2>Taariikh & Cibaadooyinka Hore</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Taariikh</th>
+        <th>Cibaadooyinka</th>
+        <th>Falal</th>
+      </tr>
+    </thead>
+    <tbody id="historyTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
